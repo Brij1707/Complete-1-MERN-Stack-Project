@@ -1,10 +1,14 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 import Header from '../Common/Header'
 
 const UserLayout = () => {
   return (
     <>
-     <Header/>
+      <Header />
+      <main className="min-h-screen">
+        <Outlet />
+      </main>
     </>
   )
 }
